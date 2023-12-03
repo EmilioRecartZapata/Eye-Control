@@ -1,0 +1,2 @@
+This code uses the OpenCV, MediaPipe and PyAutoGUI libraries to create a mouse control system using eye movement.
+A general loop continuously captures the camera, processes and returns the detected facial landmarks. It then moves the mouse cursor to the position of a second landmark that corresponds to the pixel coordinate on the screen. A function was also generated to identify the eye opening, and if it is less than a factor of one, it simulates the action of a click.
