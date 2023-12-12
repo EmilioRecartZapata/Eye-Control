@@ -2,7 +2,7 @@ import cv2
 import mediapipe as mp
 import pyautogui
 
-def control_ocular():
+def eye_control():
     cam = cv2.VideoCapture(0)
     face_mesh = mp.solutions.face_mesh.FaceMesh(refine_landmarks=True)
     screen_w, screen_h = pyautogui.size()
@@ -46,4 +46,4 @@ def control_ocular():
         cv2.imshow('Eye Controlled Mouse', frame)
         cv2.waitKey(1)
 
-control_ocular()
+eye_control()
